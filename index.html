@@ -10,35 +10,60 @@
     ══════════════════════════════════════════════════════════════════════
     DATA: edit only this block to update the site.
     - "updated": when the data was last refreshed (shown in the header)
-    - "stores": one entry per store searched. status = "complete" | "in-progress" | "not-started"
+    - "stores": one entry per store, with a "depts" entry for "Women's" and "Men's":
+                status = "complete" | "in-progress" | "not-started"
                 scope = "all" (every size searched) or a single size like "9" (only that size searched)
     - "items": one entry per listing found. Prices are numbers (no $). "sizes" = sizes offered.
     ══════════════════════════════════════════════════════════════════════
   -->
   <script id="report-data" type="application/json">
   {
-    "updated": "2026-11-01T18:30:00-05:00",
+    "updated": "2026-11-01T18:42:00-05:00",
     "stores": [
       {
         "name": "TJ Maxx",
-        "status": "complete",
-        "scope": "all",
-        "searched": 3111,
-        "ranAt": "2026-11-01"
+        "depts": {
+          "Women's": {
+            "status": "complete",
+            "scope": "all",
+            "searched": 3111,
+            "ranAt": "2026-11-01"
+          },
+          "Men's": {
+            "status": "not-started"
+          }
+        }
       },
       {
         "name": "Marshalls",
-        "status": "complete",
-        "scope": "all",
-        "searched": 2824,
-        "ranAt": "2026-11-01"
+        "depts": {
+          "Women's": {
+            "status": "complete",
+            "scope": "all",
+            "searched": 2824,
+            "ranAt": "2026-11-01"
+          },
+          "Men's": {
+            "status": "in-progress"
+          }
+        }
       },
       {
         "name": "Sierra",
-        "status": "complete",
-        "scope": "all",
-        "searched": 1513,
-        "ranAt": "2026-11-01T18:30:00-05:00"
+        "depts": {
+          "Women's": {
+            "status": "complete",
+            "scope": "all",
+            "searched": 1513,
+            "ranAt": "2026-11-01T18:30:00-05:00"
+          },
+          "Men's": {
+            "status": "complete",
+            "scope": "all",
+            "searched": 896,
+            "ranAt": "2026-11-01T18:42:00-05:00"
+          }
+        }
       }
     ],
     "items": [
@@ -1291,6 +1316,515 @@
         "url": "https://www.sierra.com/allbirds-wool-piper-2-sneakers-merino-wool-for-women~p~8rtxv/?filterString=womens-shoes~d~19%2F",
         "image": "https://i.stpost.com/allbirds-piper-2-sneakers-for-women-in-blzzrd-vvd-rd-ntrl-wht~p~8rtxv_01~60.2.jpg",
         "thumb": true
+      },
+      {
+        "store": "Sierra",
+        "dept": "Men's",
+        "title": "Varsity Jersey Sneakers",
+        "color": "Light Gy/Vrdnt Gn/Blzz",
+        "productId": "199a7",
+        "colorId": "",
+        "sizes": [
+          "9",
+          "9.5",
+          "10",
+          "10.5",
+          "11",
+          "11.5",
+          "12",
+          "13"
+        ],
+        "price": 29.99,
+        "compareAt": 120.0,
+        "tags": [],
+        "found": "2026-11-01",
+        "url": "https://www.sierra.com/allbirds-varsity-jersey-sneakers-for-men~p~199a7/?filterString=mens-shoes~d~11%2F",
+        "image": "https://i.stpost.com/allbirds-varsity-jersey-sneakers-for-men-in-light-gy-vrdnt-gn-blzz~p~199a7_01~60.2.jpg",
+        "thumb": true
+      },
+      {
+        "store": "Sierra",
+        "dept": "Men's",
+        "title": "Tree Runner Go Running Shoes",
+        "color": "Blzz/Hzy Pn",
+        "productId": "17pp9",
+        "colorId": "",
+        "sizes": [
+          "12.5",
+          "13",
+          "13.5",
+          "14"
+        ],
+        "price": 24.99,
+        "compareAt": 60.0,
+        "tags": [],
+        "found": "2026-11-01",
+        "url": "https://www.sierra.com/allbirds-tree-runner-go-running-shoes-for-men~p~17pp9/?filterString=mens-shoes~d~11%2F",
+        "image": "https://i.stpost.com/allbirds-tree-runner-go-running-shoes-for-men-in-blzz-hzy-pn~p~17pp9_01~60.2.jpg",
+        "thumb": true
+      },
+      {
+        "store": "Sierra",
+        "dept": "Men's",
+        "title": "Wool Cruiser Sneakers",
+        "color": "Light Tan",
+        "productId": "199a2",
+        "colorId": "",
+        "sizes": [
+          "8.5",
+          "9",
+          "9.5",
+          "11.5",
+          "12",
+          "13",
+          "13.5",
+          "14"
+        ],
+        "price": 24.99,
+        "compareAt": 105.0,
+        "tags": [],
+        "found": "2026-11-01",
+        "url": "https://www.sierra.com/allbirds-wool-cruiser-sneakers-for-men~p~199a2/?filterString=mens-shoes~d~11%2F",
+        "image": "https://i.stpost.com/allbirds-wool-cruiser-sneakers-for-men-in-light-tan~p~199a2_01~60.2.jpg",
+        "thumb": true
+      },
+      {
+        "store": "Sierra",
+        "dept": "Men's",
+        "title": "Cruiser TerraLux Sneakers",
+        "color": "Anthracite",
+        "productId": "17pv3",
+        "colorId": "",
+        "sizes": [
+          "8",
+          "8.5",
+          "9",
+          "9.5",
+          "10",
+          "10.5",
+          "11",
+          "11.5",
+          "12",
+          "12.5",
+          "13",
+          "13.5",
+          "14"
+        ],
+        "price": 29.99,
+        "compareAt": 135.0,
+        "tags": [],
+        "found": "2026-11-01",
+        "url": "https://www.sierra.com/allbirds-cruiser-terralux-sneakers-for-men~p~17pv3/?filterString=mens-shoes~d~11%2F",
+        "image": "https://i.stpost.com/allbirds-cruiser-terralux-sneakers-for-men-in-anthracite~p~17pv3_01~60.2.jpg",
+        "thumb": true
+      },
+      {
+        "store": "Sierra",
+        "dept": "Men's",
+        "title": "Cruiser TerraLux Sneakers",
+        "color": "Toasted Coconut",
+        "productId": "17pu5",
+        "colorId": "",
+        "sizes": [
+          "9",
+          "10",
+          "10.5",
+          "11",
+          "11.5",
+          "12",
+          "12.5",
+          "13",
+          "14"
+        ],
+        "price": 29.99,
+        "compareAt": 135.0,
+        "tags": [],
+        "found": "2026-11-01",
+        "url": "https://www.sierra.com/allbirds-cruiser-terralux-sneakers-for-men~p~17pu5/?filterString=mens-shoes~d~11%2F",
+        "image": "https://i.stpost.com/allbirds-cruiser-terralux-sneakers-for-men-in-toasted-coconut~p~17pu5_01~60.2.jpg",
+        "thumb": true
+      },
+      {
+        "store": "Sierra",
+        "dept": "Men's",
+        "title": "Tree Runner Go Running Shoes",
+        "color": "Blzz/Deep Nvy",
+        "productId": "17pp7",
+        "colorId": "",
+        "sizes": [
+          "13.5",
+          "14"
+        ],
+        "price": 24.99,
+        "compareAt": 60.0,
+        "tags": [],
+        "found": "2026-11-01",
+        "url": "https://www.sierra.com/allbirds-tree-runner-go-running-shoes-for-men~p~17pp7/?filterString=mens-shoes~d~11%2F",
+        "image": "https://i.stpost.com/allbirds-tree-runner-go-running-shoes-for-men-in-blzz-deep-nvy~p~17pp7_01~60.2.jpg",
+        "thumb": true
+      },
+      {
+        "store": "Sierra",
+        "dept": "Men's",
+        "title": "Wool Cruiser Sneakers",
+        "color": "Sapphire Blue",
+        "productId": "17pt8",
+        "colorId": "",
+        "sizes": [
+          "8",
+          "8.5",
+          "9",
+          "9.5",
+          "10",
+          "10.5",
+          "11",
+          "11.5",
+          "12",
+          "13"
+        ],
+        "price": 24.99,
+        "compareAt": 105.0,
+        "tags": [],
+        "found": "2026-11-01",
+        "url": "https://www.sierra.com/allbirds-wool-cruiser-sneakers-for-men~p~17pt8/?filterString=mens-shoes~d~11%2F",
+        "image": "https://i.stpost.com/allbirds-wool-cruiser-sneakers-for-men-in-sapphire-blue~p~17pt8_01~60.2.jpg",
+        "thumb": true
+      },
+      {
+        "store": "Sierra",
+        "dept": "Men's",
+        "title": "Wool Cruiser Sneakers",
+        "color": "Medium Grey",
+        "productId": "17pv0",
+        "colorId": "",
+        "sizes": [
+          "8",
+          "8.5",
+          "9.5",
+          "11.5",
+          "13"
+        ],
+        "price": 24.99,
+        "compareAt": 105.0,
+        "tags": [],
+        "found": "2026-11-01",
+        "url": "https://www.sierra.com/allbirds-wool-cruiser-sneakers-for-men~p~17pv0/?filterString=mens-shoes~d~11%2F",
+        "image": "https://i.stpost.com/allbirds-wool-cruiser-sneakers-for-men-in-medium-grey~p~17pv0_01~60.2.jpg",
+        "thumb": true
+      },
+      {
+        "store": "Sierra",
+        "dept": "Men's",
+        "title": "Tree Runner Go Running Shoes",
+        "color": "Blzz/Hzy Pn",
+        "productId": "17pp3",
+        "colorId": "",
+        "sizes": [
+          "13.5",
+          "14"
+        ],
+        "price": 24.99,
+        "compareAt": 60.0,
+        "tags": [],
+        "found": "2026-11-01",
+        "url": "https://www.sierra.com/allbirds-tree-runner-go-running-shoes-for-men~p~17pp3/?filterString=mens-shoes~d~11%2F",
+        "image": "https://i.stpost.com/allbirds-tree-runner-go-running-shoes-for-men-in-blzz-hzy-pn~p~17pp3_01~60.2.jpg",
+        "thumb": true
+      },
+      {
+        "store": "Sierra",
+        "dept": "Men's",
+        "title": "Runner NZ Canvas Stripes Running Shoes",
+        "color": "Deep Navy",
+        "productId": "17pp8",
+        "colorId": "",
+        "sizes": [
+          "9",
+          "9.5",
+          "10.5",
+          "11.5",
+          "12"
+        ],
+        "price": 24.99,
+        "compareAt": 80.0,
+        "tags": [],
+        "found": "2026-11-01",
+        "url": "https://www.sierra.com/allbirds-runner-nz-canvas-stripes-running-shoes-for-men~p~17pp8/?filterString=mens-shoes~d~11%2F",
+        "image": "https://i.stpost.com/allbirds-runner-nz-canvas-stripes-running-shoes-for-men-in-deep-navy~p~17pp8_01~60.2.jpg",
+        "thumb": true
+      },
+      {
+        "store": "Sierra",
+        "dept": "Men's",
+        "title": "Varsity Cruiser Sneakers",
+        "color": "Natural Blk",
+        "productId": "199a5",
+        "colorId": "",
+        "sizes": [
+          "13.5"
+        ],
+        "price": 24.99,
+        "compareAt": 115.0,
+        "tags": [],
+        "found": "2026-11-01",
+        "url": "https://www.sierra.com/allbirds-varsity-cruiser-sneakers-for-men~p~199a5/?filterString=mens-shoes~d~11%2F",
+        "image": "https://i.stpost.com/allbirds-varsity-cruiser-sneakers-for-men-in-natural-blk~p~199a5_01~60.2.jpg",
+        "thumb": true
+      },
+      {
+        "store": "Sierra",
+        "dept": "Men's",
+        "title": "Tree Runner Go Running Shoes",
+        "color": "Deep Navy/Blizzard",
+        "productId": "9kdna",
+        "colorId": "",
+        "sizes": [
+          "13.5"
+        ],
+        "price": 22.0,
+        "compareAt": 80.0,
+        "tags": [
+          "Clearance"
+        ],
+        "found": "2026-11-01",
+        "url": "https://www.sierra.com/allbirds-tree-runner-go-running-shoes-for-men~p~9kdna/?filterString=mens-shoes~d~11%2F",
+        "image": "https://i.stpost.com/allbirds-tree-runner-go-running-shoes-for-men-in-deep-navy-blizzard~p~9kdna_01~60.2.jpg",
+        "thumb": true
+      },
+      {
+        "store": "Sierra",
+        "dept": "Men's",
+        "title": "Varsity Cruiser Sneakers",
+        "color": "Mushroom/Medium Gum",
+        "productId": "199a6",
+        "colorId": "",
+        "sizes": [
+          "13.5"
+        ],
+        "price": 24.99,
+        "compareAt": 115.0,
+        "tags": [],
+        "found": "2026-11-01",
+        "url": "https://www.sierra.com/allbirds-varsity-cruiser-sneakers-for-men~p~199a6/?filterString=mens-shoes~d~11%2F",
+        "image": "https://i.stpost.com/allbirds-varsity-cruiser-sneakers-for-men-in-mushroom-medium-gum~p~199a6_01~60.2.jpg",
+        "thumb": true
+      },
+      {
+        "store": "Sierra",
+        "dept": "Men's",
+        "title": "Wool Cruiser Sneakers",
+        "color": "Forest Green",
+        "productId": "17pv1",
+        "colorId": "",
+        "sizes": [
+          "11.5"
+        ],
+        "price": 24.99,
+        "compareAt": 105.0,
+        "tags": [],
+        "found": "2026-11-01",
+        "url": "https://www.sierra.com/allbirds-wool-cruiser-sneakers-for-men~p~17pv1/?filterString=mens-shoes~d~11%2F",
+        "image": "https://i.stpost.com/allbirds-wool-cruiser-sneakers-for-men-in-forest-green~p~17pv1_01~60.2.jpg",
+        "thumb": true
+      },
+      {
+        "store": "Sierra",
+        "dept": "Men's",
+        "title": "Wool Cruiser Sneakers",
+        "color": "Sapphire Blue",
+        "productId": "199a0",
+        "colorId": "",
+        "sizes": [
+          "11.5"
+        ],
+        "price": 24.99,
+        "compareAt": 105.0,
+        "tags": [],
+        "found": "2026-11-01",
+        "url": "https://www.sierra.com/allbirds-wool-cruiser-sneakers-for-men~p~199a0/?filterString=mens-shoes~d~11%2F",
+        "image": "https://i.stpost.com/allbirds-wool-cruiser-sneakers-for-men-in-sapphire-blue~p~199a0_01~60.2.jpg",
+        "thumb": true
+      },
+      {
+        "store": "Sierra",
+        "dept": "Men's",
+        "title": "Tree Dasher 2 Running Shoes",
+        "color": "Weathered White",
+        "productId": "9kdnj",
+        "colorId": "",
+        "sizes": [
+          "13.5"
+        ],
+        "price": 22.0,
+        "compareAt": 80.0,
+        "tags": [],
+        "found": "2026-11-01",
+        "url": "https://www.sierra.com/allbirds-tree-dasher-2-running-shoes-for-men~p~9kdnj/?filterString=mens-shoes~d~11%2F",
+        "image": "https://i.stpost.com/allbirds-tree-dasher-2-running-shoes-for-men-in-weathered-white-wtd-wt~p~9kdnj_01~60.2.jpg",
+        "thumb": true
+      },
+      {
+        "store": "Sierra",
+        "dept": "Men's",
+        "title": "Wool Cruiser Sneakers",
+        "color": "Ntrl Blck",
+        "productId": "17pu9",
+        "colorId": "",
+        "sizes": [
+          "10",
+          "10.5"
+        ],
+        "price": 24.99,
+        "compareAt": 105.0,
+        "tags": [],
+        "found": "2026-11-01",
+        "url": "https://www.sierra.com/allbirds-wool-cruiser-sneakers-for-men~p~17pu9/?filterString=mens-shoes~d~11%2F",
+        "image": "https://i.stpost.com/allbirds-wool-cruiser-sneakers-for-men-in-ntrl-blck~p~17pu9_01~60.2.jpg",
+        "thumb": true
+      },
+      {
+        "store": "Sierra",
+        "dept": "Men's",
+        "title": "Wool Cruiser Sneakers",
+        "color": "Natural Black/Gum",
+        "productId": "199a1",
+        "colorId": "",
+        "sizes": [
+          "13.5"
+        ],
+        "price": 24.99,
+        "compareAt": 105.0,
+        "tags": [],
+        "found": "2026-11-01",
+        "url": "https://www.sierra.com/allbirds-wool-cruiser-sneakers-for-men~p~199a1/?filterString=mens-shoes~d~11%2F",
+        "image": "https://i.stpost.com/allbirds-wool-cruiser-sneakers-for-men-in-natural-black-gum~p~199a1_01~60.2.jpg",
+        "thumb": true
+      },
+      {
+        "store": "Sierra",
+        "dept": "Men's",
+        "title": "Tree Dasher 2 Running Shoes",
+        "color": "Weathered White",
+        "productId": "9kfga",
+        "colorId": "",
+        "sizes": [
+          "13.5"
+        ],
+        "price": 22.0,
+        "compareAt": 80.0,
+        "tags": [],
+        "found": "2026-11-01",
+        "url": "https://www.sierra.com/allbirds-tree-dasher-2-running-shoes-for-men~p~9kfga/?filterString=mens-shoes~d~11%2F",
+        "image": "https://i.stpost.com/allbirds-tree-dasher-2-running-shoes-for-men-in-weathered-white-wtd-wt~p~9kfga_01~60.2.jpg",
+        "thumb": true
+      },
+      {
+        "store": "Sierra",
+        "dept": "Men's",
+        "title": "Wool Cruiser Sneakers",
+        "color": "Forest Green",
+        "productId": "199a3",
+        "colorId": "",
+        "sizes": [
+          "9.5"
+        ],
+        "price": 24.99,
+        "compareAt": 105.0,
+        "tags": [],
+        "found": "2026-11-01",
+        "url": "https://www.sierra.com/allbirds-wool-cruiser-sneakers-for-men~p~199a3/?filterString=mens-shoes~d~11%2F",
+        "image": "https://i.stpost.com/allbirds-wool-cruiser-sneakers-for-men-in-forest-green~p~199a3_01~60.2.jpg",
+        "thumb": true
+      },
+      {
+        "store": "Sierra",
+        "dept": "Men's",
+        "title": "SuperLight Trail Running Shoes",
+        "color": "Rugged Beige",
+        "productId": "9kdmr",
+        "colorId": "",
+        "sizes": [
+          "14"
+        ],
+        "price": 22.0,
+        "compareAt": 80.0,
+        "tags": [],
+        "found": "2026-11-01",
+        "url": "https://www.sierra.com/allbirds-superlight-trail-running-shoes-for-men~p~9kdmr/?filterString=mens-shoes~d~11%2F",
+        "image": "https://i.stpost.com/allbirds-superlight-trail-running-shoes-for-men-in-rugged-beige~p~9kdmr_01~60.2.jpg",
+        "thumb": true
+      },
+      {
+        "store": "Sierra",
+        "dept": "Men's",
+        "title": "Tree Runner Go Running Shoes",
+        "color": "Deep Navy/Blizzard",
+        "productId": "9kffx",
+        "colorId": "",
+        "sizes": [
+          "13.5"
+        ],
+        "price": 22.0,
+        "compareAt": 80.0,
+        "tags": [],
+        "found": "2026-11-01",
+        "url": "https://www.sierra.com/allbirds-tree-runner-go-running-shoes-for-men~p~9kffx/?filterString=mens-shoes~d~11%2F",
+        "image": "https://i.stpost.com/allbirds-tree-runner-go-running-shoes-for-men-in-deep-navy-blizzard~p~9kffx_01~60.2.jpg",
+        "thumb": true
+      },
+      {
+        "store": "Sierra",
+        "dept": "Men's",
+        "title": "Tree Runner Go Running Shoes",
+        "color": "Blzz/Hanami",
+        "productId": "9kdmw",
+        "colorId": "",
+        "sizes": [
+          "13.5"
+        ],
+        "price": 22.0,
+        "compareAt": 80.0,
+        "tags": [],
+        "found": "2026-11-01",
+        "url": "https://www.sierra.com/allbirds-tree-runner-go-running-shoes-for-men~p~9kdmw/?filterString=mens-shoes~d~11%2F",
+        "image": "https://i.stpost.com/allbirds-tree-runner-go-running-shoes-for-men-in-blzz-hanami~p~9kdmw_01~60.2.jpg",
+        "thumb": true
+      },
+      {
+        "store": "Sierra",
+        "dept": "Men's",
+        "title": "Tree Runner Go Running Shoes",
+        "color": "Blzz/Hanami",
+        "productId": "9kfft",
+        "colorId": "",
+        "sizes": [
+          "13.5"
+        ],
+        "price": 22.0,
+        "compareAt": 80.0,
+        "tags": [],
+        "found": "2026-11-01",
+        "url": "https://www.sierra.com/allbirds-tree-runner-go-running-shoes-for-men~p~9kfft/?filterString=mens-shoes~d~11%2F",
+        "image": "https://i.stpost.com/allbirds-tree-runner-go-running-shoes-for-men-in-blzz-hanami~p~9kfft_01~60.2.jpg",
+        "thumb": true
+      },
+      {
+        "store": "Sierra",
+        "dept": "Men's",
+        "title": "Runner Go Lux Running Shoes, Merino Wool",
+        "color": "Blizzard",
+        "productId": "9kdmt",
+        "colorId": "",
+        "sizes": [
+          "13.5"
+        ],
+        "price": 22.0,
+        "compareAt": 80.0,
+        "tags": [],
+        "found": "2026-11-01",
+        "url": "https://www.sierra.com/allbirds-runner-go-lux-running-shoes-merino-wool-for-men~p~9kdmt/?filterString=mens-shoes~d~11%2F",
+        "image": "https://i.stpost.com/allbirds-runner-go-lux-running-shoes-merino-wool-for-men-in-blizzard~p~9kdmt_01~60.3.jpg",
+        "thumb": true
       }
     ]
   }
@@ -1387,6 +1921,12 @@
     .store-found { font-size: 1.3rem; font-weight: 700; color: #1a2744; }
     .store-found span { font-size: .72rem; font-weight: 600; color: #718096; margin-left: 4px; text-transform: uppercase; letter-spacing: .04em; }
     .store-detail { font-size: .75rem; color: #718096; }
+    .dept-line { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; padding-top: 6px; border-top: 1px solid #f0f2f5; margin-top: 4px; }
+    .dept-line:first-of-type { border-top: none; margin-top: 0; padding-top: 2px; }
+    .dept-name { font-size: .7rem; font-weight: 800; color: #4a5568; text-transform: uppercase; letter-spacing: .05em; min-width: 62px; }
+    .dept-count { font-size: 1.15rem; font-weight: 700; color: #1a2744; }
+    .dept-count small { font-size: .68rem; font-weight: 600; color: #718096; margin-left: 3px; }
+    .filter-hint { font-size: .78rem; color: #a0aec0; padding: 4px 0; }
     .pill {
       font-size: .66rem; font-weight: 800; padding: 2px 8px; border-radius: 20px;
       text-transform: uppercase; letter-spacing: .04em; white-space: nowrap;
@@ -1555,7 +2095,7 @@
 <header>
   <div class="header-inner">
     <div>
-      <h1>👟 Allbirds · Women's Shoes</h1>
+      <h1>👟 Allbirds Off-Price Finds</h1>
       <div class="header-meta">
         <span id="updated-label"></span>
         <span id="run-status" class="status-badge"></span>
@@ -1569,7 +2109,7 @@
   <div class="store-strip" id="store-strip"></div>
 
   <div id="search-bar">
-    <input id="search-box" type="search" placeholder="🔍 Search style, color, store, item #…" autocomplete="off" spellcheck="false">
+    <input id="search-box" type="search" placeholder="🔍 Search style, color, store, men's/women's, item #…" autocomplete="off" spellcheck="false">
     <button id="search-clear" hidden>✕</button>
   </div>
 
@@ -1592,7 +2132,7 @@
 </main>
 
 <footer>
-  Sizes are the options on each listing's product page. Clearance prices are the product-page price, which can be lower
+  Sizes are the options on each listing's product page; men's and women's sizes are filtered separately. Clearance prices are the product-page price, which can be lower
   than the store's grid shows. Stock at off-price stores changes fast, so tap through to confirm.
 </footer>
 
@@ -1640,30 +2180,47 @@
     return Math.max(0, Math.round((today - d) / 86400000));
   }
 
+  var DEPTS = ["Women's", "Men's"];
+  function deptRec(store, dept) {
+    var st = stores.filter(function (s) { return s.name === store; })[0];
+    return (st && st.depts && st.depts[dept]) || {};
+  }
+
   items.forEach(function (it) {
     it.discount = it.compareAt > it.price ? Math.round((1 - it.price / it.compareAt) * 100) : 0;
     it.storeSlug = slug(it.store);
     it.style = styleOf(it.title);
     it.sizes = it.sizes || [];
-    var st = stores.filter(function (s) { return s.name === it.store; })[0];
-    it.sizeScope = st && st.scope && st.scope !== 'all' ? st.scope : '';
+    it.dept = it.dept || "Women's";
+    var rec = deptRec(it.store, it.dept);
+    it.sizeScope = rec.scope && rec.scope !== 'all' ? rec.scope : '';
   });
   function sizeSort(a, b) { return parseFloat(a) - parseFloat(b); }
-  var allSizes = [];
-  items.forEach(function (it) { it.sizes.forEach(function (z) { if (allSizes.indexOf(z) === -1) allSizes.push(z); }); });
-  allSizes.sort(sizeSort);
+  function sizesFor(dept) {
+    var out = [];
+    items.forEach(function (it) {
+      if (it.dept !== dept) return;
+      it.sizes.forEach(function (z) { if (out.indexOf(z) === -1) out.push(z); });
+    });
+    return out.sort(sizeSort);
+  }
 
   // ── header ──
   document.getElementById('updated-label').textContent = DATA.updated ? 'Updated ' + fmtDateTime(DATA.updated) : '';
-  var running = stores.filter(function (s) { return s.status === 'in-progress'; });
-  var pending = stores.filter(function (s) { return s.status === 'not-started'; });
+  var running = [], pending = [];
+  stores.forEach(function (s) {
+    DEPTS.forEach(function (d) {
+      var r = deptRec(s.name, d), label = s.name + ' ' + d.toLowerCase();
+      if (r.status === 'in-progress') running.push(label);
+      else if (r.status !== 'complete') pending.push(label);
+    });
+  });
   var runStatus = document.getElementById('run-status');
-  if (running.length) {
-    runStatus.className = 'status-badge busy';
-    runStatus.textContent = '⏳ Still searching ' + running.map(function (s) { return s.name; }).join(', ');
-  } else if (pending.length) {
-    runStatus.className = 'status-badge closed';
-    runStatus.textContent = pending.length + ' store' + (pending.length > 1 ? 's' : '') + ' not searched yet';
+  if (running.length || pending.length) {
+    runStatus.className = 'status-badge ' + (running.length ? 'busy' : 'closed');
+    runStatus.textContent = (running.length ? '⏳ Searching ' + running.join(', ') : '') +
+      (running.length && pending.length ? ' · ' : '') +
+      (pending.length ? 'not yet: ' + pending.join(', ') : '');
   } else {
     runStatus.className = 'status-badge live';
     runStatus.textContent = '✓ All stores searched';
@@ -1684,18 +2241,29 @@
   }).join('');
 
   // ── store status strip ──
+  var STATUS_TEXT = { 'complete': 'Searched', 'in-progress': 'Searching…', 'not-started': 'Not yet' };
   document.getElementById('store-strip').innerHTML = stores.map(function (s) {
-    var found = items.filter(function (it) { return it.store === s.name; }).length;
-    var statusText = { 'complete': 'Searched', 'in-progress': 'Searching…', 'not-started': 'Not yet' }[s.status] || s.status;
-    var detail = [];
-    if (s.searched) detail.push(s.searched.toLocaleString() + (s.scope && s.scope !== 'all' ? ' size-' + s.scope : '') + ' shoes checked');
-    if (s.ranAt) detail.push((s.status === 'in-progress' ? 'started ' : '') + fmtTime(s.ranAt));
+    var statuses = DEPTS.map(function (d) { return deptRec(s.name, d).status || 'not-started'; });
+    var overall = statuses.every(function (x) { return x === 'complete'; }) ? 'complete'
+                : statuses.indexOf('in-progress') !== -1 ? 'in-progress' : 'not-started';
+    var overallText = overall === 'not-started' && statuses.indexOf('complete') !== -1 ? 'Partly searched' : STATUS_TEXT[overall];
     return '<div class="store-card">' +
       '<div class="store-top"><span class="store-name">' + esc(s.name) + '</span>' +
-      '<span class="pill pill-' + esc(s.status) + '">' + esc(statusText) + '</span></div>' +
-      '<div class="store-found">' + (s.status === 'not-started' ? '—' : found) + '<span>' + (found === 1 ? 'listing' : 'listings') +
-        ' · ' + (s.scope && s.scope !== 'all' ? 'size ' + esc(s.scope) + ' only' : 'all sizes') + '</span></div>' +
-      '<div class="store-detail">' + esc(detail.join(' · ')) + '</div></div>';
+      '<span class="pill pill-' + overall + '">' + esc(overallText) + '</span></div>' +
+      DEPTS.map(function (d) {
+        var r = deptRec(s.name, d), st = r.status || 'not-started';
+        var found = items.filter(function (it) { return it.store === s.name && it.dept === d; }).length;
+        var detail = [];
+        if (st === 'complete') {
+          detail.push(r.scope && r.scope !== 'all' ? 'size ' + r.scope + ' only' : 'all sizes');
+          if (r.searched) detail.push(r.searched.toLocaleString() + ' checked');
+          if (r.ranAt) detail.push(fmtTime(r.ranAt));
+        } else detail.push(STATUS_TEXT[st] || st);
+        return '<div class="dept-line"><span class="dept-name">' + esc(d) + '</span>' +
+          '<span class="dept-count">' + (st === 'complete' ? found : '—') +
+          (st === 'complete' ? '<small>' + (found === 1 ? 'listing' : 'listings') + '</small>' : '') + '</span>' +
+          '<span class="store-detail">' + esc(detail.join(' · ')) + '</span></div>';
+      }).join('') + '</div>';
   }).join('');
 
   // ── filter bar ──
@@ -1716,11 +2284,12 @@
     return items.some(function (it) { return it.style === n; });
   });
   document.getElementById('filter-bar').innerHTML =
-    '<div class="filter-row"><span class="filter-label">Size</span><div class="filter-pills">' +
-      pills('size', allSizes.map(function (z) {
-        var c = items.filter(function (it) { return it.sizes.indexOf(z) !== -1; }).length;
-        return { val: z, label: z + ' (' + c + ')' };
+    '<div class="filter-row"><span class="filter-label">Shoes</span><div class="filter-pills">' +
+      pills('dept', DEPTS.map(function (d) {
+        var c = items.filter(function (it) { return it.dept === d; }).length;
+        return { val: d, label: d + ' (' + c + ')' };
       })) + '</div></div>' +
+    '<div class="filter-row"><span class="filter-label">Size</span><div class="filter-pills" id="size-pills"></div></div>' +
     '<div class="filter-row"><span class="filter-label">Style</span><div class="filter-pills">' +
       pills('style', styleNames.map(function (n) {
         var c = items.filter(function (it) { return it.style === n; }).length;
@@ -1752,7 +2321,7 @@
           (it.discount ? '<span class="badge ' + badgeCls + '">' + it.discount + '% off</span>' : '') +
         '</div></a>' +
       '<div class="card-body">' +
-        '<div class="card-cat">Allbirds</div>' +
+        '<div class="card-cat">Allbirds · ' + esc(it.dept) + '</div>' +
         '<div class="card-name"><a href="' + esc(it.url) + '" target="_blank" rel="noopener">' + esc(it.title) + '</a></div>' +
         '<div class="card-color">' + esc(ids) + '</div>' +
         '<div class="card-price">' +
@@ -1799,17 +2368,34 @@
   };
 
   // ── state + render ──
-  var state = { view: 'all', size: 'all', style: 'all', store: 'all', price: 'all', q: '', sort: 'discount', dir: 'desc' };
+  var state = { view: 'all', dept: 'all', size: 'all', style: 'all', store: 'all', price: 'all', q: '', sort: 'discount', dir: 'desc' };
 
-  // Remember the chosen size on this device (best effort; works without storage too).
-  var SIZE_KEY = 'allbirds-size';
+  // Remember department + size on this device (best effort; works without storage too).
+  var SIZE_KEY = 'allbirds-size', DEPT_KEY = 'allbirds-dept';
+  function store(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
   try {
-    var saved = localStorage.getItem(SIZE_KEY);
-    if (saved && allSizes.indexOf(saved) !== -1) state.size = saved;
+    var savedDept = localStorage.getItem(DEPT_KEY), savedSize = localStorage.getItem(SIZE_KEY);
+    if (!savedDept && savedSize && savedSize !== 'all') savedDept = "Women's";   // saved before men's existed
+    if (DEPTS.indexOf(savedDept) !== -1) state.dept = savedDept;
+    if (state.dept !== 'all' && savedSize && sizesFor(state.dept).indexOf(savedSize) !== -1) state.size = savedSize;
   } catch (e) {}
-  document.querySelectorAll('.filter-btn[data-dim="size"]').forEach(function (b) {
-    b.classList.toggle('active', b.getAttribute('data-val') === state.size);
+
+  function buildSizeRow() {
+    var el = document.getElementById('size-pills');
+    if (state.dept === 'all') {
+      el.innerHTML = '<span class="filter-hint">Pick Women\'s or Men\'s to filter by size</span>';
+      return;
+    }
+    el.innerHTML = pills('size', sizesFor(state.dept).map(function (z) {
+      var c = items.filter(function (it) { return it.dept === state.dept && it.sizes.indexOf(z) !== -1; }).length;
+      return { val: z, label: z + ' (' + c + ')' };
+    }));
+    el.querySelectorAll('.filter-btn').forEach(function (b) { b.classList.toggle('active', b.getAttribute('data-val') === state.size); });
+  }
+  document.querySelectorAll('.filter-btn[data-dim="dept"]').forEach(function (b) {
+    b.classList.toggle('active', b.getAttribute('data-val') === state.dept);
   });
+  buildSizeRow();
 
   function render() {
     var view = views.filter(function (v) { return v.key === state.view; })[0];
@@ -1818,10 +2404,11 @@
       if (!view.test(it)) return false;
       if (state.store !== 'all' && it.storeSlug !== state.store) return false;
       if (state.style !== 'all' && it.style !== state.style) return false;
+      if (state.dept !== 'all' && it.dept !== state.dept) return false;
       if (state.size !== 'all' && it.sizes.indexOf(state.size) === -1) return false;
       if (band && !band.test(it.price)) return false;
       if (state.q) {
-        var hay = [it.title, it.store, it.productId, it.colorId, it.color, 'allbirds'].join(' ').toLowerCase();
+        var hay = [it.title, it.store, it.dept, it.productId, it.colorId, it.color, 'allbirds'].join(' ').toLowerCase();
         if (hay.indexOf(state.q) === -1) return false;
       }
       return true;
@@ -1838,7 +2425,8 @@
     });
     grid.innerHTML = list.map(cardHtml).join('');
     document.getElementById('section-title').textContent =
-      (view.key === 'all' ? 'All Finds' : view.label) + (state.size !== 'all' ? ' · Size ' + state.size : '');
+      (view.key === 'all' ? 'All Finds' : view.label) + (state.dept !== 'all' ? ' · ' + state.dept : '') +
+      (state.size !== 'all' ? ' · Size ' + state.size : '');
     document.getElementById('section-count').textContent = list.length;
     document.getElementById('empty-msg').hidden = list.length > 0;
   }
@@ -1856,9 +2444,14 @@
     var btn = e.target.closest('.filter-btn');
     if (!btn) return;
     state[btn.getAttribute('data-dim')] = btn.getAttribute('data-val');
-    if (btn.getAttribute('data-dim') === 'size') {
-      try { localStorage.setItem(SIZE_KEY, state.size); } catch (e) {}
+    var dim = btn.getAttribute('data-dim');
+    if (dim === 'dept') {
+      store(DEPT_KEY, state.dept);
+      state.size = 'all';   // a men's 9 is not a women's 9, so never carry a size across
+      store(SIZE_KEY, state.size);
+      buildSizeRow();
     }
+    if (dim === 'size') store(SIZE_KEY, state.size);
     btn.closest('.filter-row').querySelectorAll('.filter-btn').forEach(function (b) { b.classList.remove('active'); });
     btn.classList.add('active');
     render();
