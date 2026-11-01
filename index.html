@@ -10,7 +10,7 @@
     ══════════════════════════════════════════════════════════════════════
     DATA: edit only this block to update the site.
     - "updated": when the data was last refreshed (shown in the header)
-    - "stores": one entry per store, with a "depts" entry for "Women's" and "Men's":
+    - "stores": one entry per store, with a "depts" entry for each department it sells ("Women's", "Men's"):
                 status = "complete" | "in-progress" | "not-started"
                 scope = "all" (every size searched) or a single size like "9" (only that size searched)
     - "items": one entry per listing found. Prices are numbers (no $). "sizes" = sizes offered.
@@ -18,7 +18,7 @@
   -->
   <script id="report-data" type="application/json">
   {
-    "updated": "2026-11-01T18:42:00-05:00",
+    "updated": "2026-11-01T18:48:00-05:00",
     "stores": [
       {
         "name": "TJ Maxx",
@@ -28,9 +28,6 @@
             "scope": "all",
             "searched": 3111,
             "ranAt": "2026-11-01"
-          },
-          "Men's": {
-            "status": "not-started"
           }
         }
       },
@@ -44,7 +41,10 @@
             "ranAt": "2026-11-01"
           },
           "Men's": {
-            "status": "in-progress"
+            "status": "complete",
+            "scope": "all",
+            "searched": 485,
+            "ranAt": "2026-11-01T18:48:00-05:00"
           }
         }
       },
@@ -1825,6 +1825,89 @@
         "url": "https://www.sierra.com/allbirds-runner-go-lux-running-shoes-merino-wool-for-men~p~9kdmt/?filterString=mens-shoes~d~11%2F",
         "image": "https://i.stpost.com/allbirds-runner-go-lux-running-shoes-merino-wool-for-men-in-blizzard~p~9kdmt_01~60.3.jpg",
         "thumb": true
+      },
+      {
+        "store": "Marshalls",
+        "dept": "Men's",
+        "title": "Merino Wool Blend Runner Chelsea Boots",
+        "color": "Light Grey",
+        "productId": "4000513201",
+        "colorId": "NS4155200",
+        "sizes": [
+          "9.5",
+          "10",
+          "10.5",
+          "11",
+          "11.5",
+          "12.5"
+        ],
+        "price": 29.99,
+        "compareAt": 60.0,
+        "tags": [],
+        "found": "2026-11-01",
+        "url": "https://www.marshalls.com/us/store/jump/product/men-men-shoes/Men%27s-Merino-Wool-Blend-Runner-Chelsea-Boots/4000513201?colorId=NS4155200&pos=1:15&N=1265548332",
+        "image": "https://img.marshalls.com/marshalls?set=DisplayName[f2],prd[4000513201_NS4155200],ag[no]&call=url[file:tjxrPRD2_RB.chain]"
+      },
+      {
+        "store": "Marshalls",
+        "dept": "Men's",
+        "title": "Tree Runner Go Utility Sneakers",
+        "color": "Black",
+        "productId": "4000513199",
+        "colorId": "NS4154762",
+        "sizes": [
+          "8",
+          "11.5",
+          "12.5",
+          "13",
+          "13.5",
+          "14"
+        ],
+        "price": 29.99,
+        "compareAt": 60.0,
+        "tags": [],
+        "found": "2026-11-01",
+        "url": "https://www.marshalls.com/us/store/jump/product/men-men-shoes/Men%27s-Tree-Runner-Go-Utility-Sneakers/4000513199?colorId=NS4154762&pos=1:16&N=1265548332",
+        "image": "https://img.marshalls.com/marshalls?set=DisplayName[f2],prd[4000513199_NS4154762],ag[no]&call=url[file:tjxrPRD2_RB.chain]"
+      },
+      {
+        "store": "Marshalls",
+        "dept": "Men's",
+        "title": "Wool Runner Mid Top Waterproof Sneakers",
+        "color": "Black",
+        "productId": "4000513200",
+        "colorId": "NS4154719",
+        "sizes": [
+          "8",
+          "10",
+          "10.5",
+          "11"
+        ],
+        "price": 29.99,
+        "compareAt": 60.0,
+        "tags": [],
+        "found": "2026-11-01",
+        "url": "https://www.marshalls.com/us/store/jump/product/men-men-shoes/Men%27s-Wool-Runner-Mid-Sneakers/4000513200?colorId=NS4154719&pos=1:17&N=1265548332",
+        "image": "https://img.marshalls.com/marshalls?set=DisplayName[f2],prd[4000513200_NS4154719],ag[no]&call=url[file:tjxrPRD2_RB.chain]"
+      },
+      {
+        "store": "Marshalls",
+        "dept": "Men's",
+        "title": "Wool Runner Sneakers",
+        "color": "Beige",
+        "productId": "4000513202",
+        "colorId": "NS4154680",
+        "sizes": [
+          "9.5",
+          "10",
+          "12.5"
+        ],
+        "price": 29.99,
+        "compareAt": 60.0,
+        "tags": [],
+        "found": "2026-11-01",
+        "url": "https://www.marshalls.com/us/store/jump/product/men-men-shoes/Men%27s-Wool-Runner-Sneakers/4000513202?colorId=NS4154680&pos=1:18&N=1265548332",
+        "image": "https://img.marshalls.com/marshalls?set=DisplayName[f2],prd[4000513202_NS4154680],ag[no]&call=url[file:tjxrPRD2_RB.chain]"
       }
     ]
   }
@@ -1922,7 +2005,7 @@
     .store-found span { font-size: .72rem; font-weight: 600; color: #718096; margin-left: 4px; text-transform: uppercase; letter-spacing: .04em; }
     .store-detail { font-size: .75rem; color: #718096; }
     .dept-line { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; padding-top: 6px; border-top: 1px solid #f0f2f5; margin-top: 4px; }
-    .dept-line:first-of-type { border-top: none; margin-top: 0; padding-top: 2px; }
+    .store-top + .dept-line { border-top: none; margin-top: 0; padding-top: 2px; }
     .dept-name { font-size: .7rem; font-weight: 800; color: #4a5568; text-transform: uppercase; letter-spacing: .05em; min-width: 62px; }
     .dept-count { font-size: 1.15rem; font-weight: 700; color: #1a2744; }
     .dept-count small { font-size: .68rem; font-weight: 600; color: #718096; margin-left: 3px; }
@@ -2153,7 +2236,7 @@
     return '$' + (Math.round(n) === n ? n.toFixed(0) : n.toFixed(2));
   }
   // Style family from the title; first match wins.
-  var STYLES = ['Kiwi', 'Varsity', 'Cruiser', 'Runner NZ', 'Trail', 'Runner', 'Dasher', 'Piper', 'Lounger',
+  var STYLES = ['Kiwi', 'Chelsea', 'Varsity', 'Cruiser', 'Runner NZ', 'Trail', 'Runner', 'Dasher', 'Piper', 'Lounger',
                 'Flyer', 'Strider', 'Topper', 'Skipper'];
   function styleOf(title) {
     for (var i = 0; i < STYLES.length; i++) if (title.indexOf(STYLES[i]) !== -1) return STYLES[i];
@@ -2181,6 +2264,7 @@
   }
 
   var DEPTS = ["Women's", "Men's"];
+  function deptsOf(s) { return DEPTS.filter(function (d) { return s.depts && s.depts[d]; }); }
   function deptRec(store, dept) {
     var st = stores.filter(function (s) { return s.name === store; })[0];
     return (st && st.depts && st.depts[dept]) || {};
@@ -2209,7 +2293,7 @@
   document.getElementById('updated-label').textContent = DATA.updated ? 'Updated ' + fmtDateTime(DATA.updated) : '';
   var running = [], pending = [];
   stores.forEach(function (s) {
-    DEPTS.forEach(function (d) {
+    deptsOf(s).forEach(function (d) {
       var r = deptRec(s.name, d), label = s.name + ' ' + d.toLowerCase();
       if (r.status === 'in-progress') running.push(label);
       else if (r.status !== 'complete') pending.push(label);
@@ -2243,14 +2327,14 @@
   // ── store status strip ──
   var STATUS_TEXT = { 'complete': 'Searched', 'in-progress': 'Searching…', 'not-started': 'Not yet' };
   document.getElementById('store-strip').innerHTML = stores.map(function (s) {
-    var statuses = DEPTS.map(function (d) { return deptRec(s.name, d).status || 'not-started'; });
+    var statuses = deptsOf(s).map(function (d) { return deptRec(s.name, d).status || 'not-started'; });
     var overall = statuses.every(function (x) { return x === 'complete'; }) ? 'complete'
                 : statuses.indexOf('in-progress') !== -1 ? 'in-progress' : 'not-started';
     var overallText = overall === 'not-started' && statuses.indexOf('complete') !== -1 ? 'Partly searched' : STATUS_TEXT[overall];
     return '<div class="store-card">' +
       '<div class="store-top"><span class="store-name">' + esc(s.name) + '</span>' +
       '<span class="pill pill-' + overall + '">' + esc(overallText) + '</span></div>' +
-      DEPTS.map(function (d) {
+      deptsOf(s).map(function (d) {
         var r = deptRec(s.name, d), st = r.status || 'not-started';
         var found = items.filter(function (it) { return it.store === s.name && it.dept === d; }).length;
         var detail = [];
