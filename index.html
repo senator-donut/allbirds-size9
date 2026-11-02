@@ -2430,8 +2430,8 @@
   var BIG_SIZES = ['460', '1500'];
   function imgTag(it) {
     var chain = [];
-    // A copy saved in images/ by the "Fetch product photos" GitHub Action, if one exists.
-    chain.push({ src: 'images/' + slug(it.store) + '-' + it.productId.toLowerCase() + '.jpg', cls: it.thumb ? 'fit' : '' });
+    // A copy hosted in this repo (images/), recorded by fetch_images.py when it saves one.
+    if (it.local) chain.push({ src: it.local, cls: it.store === 'Sierra' ? 'fit' : '' });
     var mm = it.thumb && it.image.match(/^(.*~)60(\.\d+\.jpg)$/);
     if (mm) BIG_SIZES.forEach(function (sz) { chain.push({ src: mm[1] + sz + mm[2], cls: 'fit' }); });
     chain.push({ src: it.image, cls: it.thumb ? 'thumb' : '' });
